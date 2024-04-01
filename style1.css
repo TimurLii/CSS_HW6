@@ -82,7 +82,6 @@ html {
 	color: #222;
 	max-width: 380px;
 	line-height: 80%;
-	text-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .last-word {
@@ -320,8 +319,7 @@ html {
 	flex-wrap: wrap;
 }
 
-
-@media screen and (max-width: 768px) {
+@media (max-width: 768px) {
 	.main-img {
 		display: none;
 	}
@@ -373,4 +371,26 @@ html {
 	.footer-conteiner {
 		padding-top: 43px;
 	}
+}
+@media screen and (max-width: 767px) and (min-width: 320px) {
+	.main-img {
+		display: none;
+	}
+	.header__link-site {
+		display: none;
+	}
+	.header {
+		padding: 0 16px;
+	}
+	.box-img {
+		background-position: center;
+		background-size: cover;
+	}
+	.product-box{
+		display: grid;
+		grid-template-columns: 1fr;
+	
+	}
+
+
 }
