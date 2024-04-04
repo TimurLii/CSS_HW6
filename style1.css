@@ -68,6 +68,7 @@ html {
 }
 .main-conteiner {
 	background-color: #f1e4e6;
+	height: 764px;
 }
 
 .vertical-line {
@@ -103,15 +104,10 @@ html {
 	gap: 16px;
 }
 
-.main-img img {
-	max-width: 386px;
-	max-height: 368px;
-}
-
 .main-img {
 	display: flex;
 	justify-content: center;
-	align-items: center;
+	/* align-items: center; */
 }
 
 .main-info {
@@ -224,6 +220,7 @@ html {
 	color: #000;
 	margin-top: 25.35px;
 	margin-bottom: 12.65px;
+	padding: 0 28px 0 16px;
 }
 
 .product-box-p p {
@@ -231,16 +228,20 @@ html {
 	font-size: 14px;
 	color: #5d5d5d;
 	margin-bottom: 18px;
+	margin-bottom: 12.65px;
+	padding: 0 28px 0 16px;
 }
 
 .product-price {
 	font-weight: 400;
 	font-size: 16px;
 	color: #f16d7f;
+	margin-bottom: 12.65px;
+	padding: 0 28px 0 16px;
 }
 
 .bad_page img {
-	max-height: 400px;
+	max-height: 420px;
 }
 
 .products-boxes {
@@ -260,9 +261,21 @@ html {
 }
 
 @media (max-width: 768px) {
-	.center {
-		max-width: 768px;
+	.header__left {
+		padding: 32px;
 	}
+	.header__right {
+		padding: 32px;
+	}
+	.main-conteiner {
+		max-height: 368px;
+	}
+	.main-img {
+		display: flex;
+		max-width: 368px;
+		max-height: 368px;
+	}
+
 	.main-text {
 		width: 311px;
 		height: 92px;
@@ -311,8 +324,10 @@ html {
 		font-size: 14px;
 		font-weight: 400;
 	}
-	.product-box {
-		padding: 0 16px;
+	.products-boxes {
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
 	}
 }
 @media screen and (max-width: 767px) and (min-width: 320px) {
@@ -334,8 +349,9 @@ html {
 		min-height: 363px;
 	}
 	.main-text {
-		width: 311px;
-		height: 92px;
+		display: flex;
+		width: 236px;
+		height: 66px;
 	}
 
 	.main-text h1 {
@@ -352,21 +368,27 @@ html {
 		font-size: 20px;
 		color: #f16d7f;
 	}
-	.vertical-line {
-		height: 61px;
-	}
+
 	.group_1 {
 		display: flex;
 		flex-wrap: wrap;
 	}
-	.products-conteiner{
+	.acc {
+		display: flex;
+		height: 111px;
+	}
+	.acc_text {
+		height: 50px;
+		width: 160px;
+	}
+
+	.products-conteiner {
 		padding: 0 8px;
 	}
 
 	.product-box {
 		display: grid;
 		grid-template-columns: 1fr;
-		padding: 16px 16px;
 	}
 	.box-text {
 		font-weight: 400;
@@ -377,10 +399,7 @@ html {
 		font-size: 24px;
 		color: #f16d7f;
 	}
-	.box-img {
-		background-position: center;
-		background-size: cover;
-	}
+
 	.poducts-title {
 		font-weight: 400;
 		font-size: 30px;
@@ -388,5 +407,10 @@ html {
 	.products-p {
 		font-weight: 400;
 		font-size: 14px;
+	}
+	.products-boxes {
+		display: flex;
+		gap: 16px;
+		flex-wrap: wrap;
 	}
 }
