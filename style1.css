@@ -547,9 +547,9 @@ input[type="email"]:hover {
 		gap: 16px;
 		flex-wrap: wrap;
 	}
-	.promotions-conteiner {
+	/* .promotions-conteiner {
 		/* height: 610px; */
-	}
+	} */
 	.promotions-group {
 		display: flex;
 		gap: 30px;
