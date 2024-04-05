@@ -572,7 +572,6 @@ input[type="email"]:hover {
 		height: 694px;
 	}
 
-
 	.footer-conteiner {
 		padding-top: 0;
 		padding-bottom: 0;
@@ -687,14 +686,14 @@ input[type="email"]:hover {
 		flex-wrap: wrap;
 	}
 	.contacts-background {
-	background-image: url("/img/background_contacts.svg");
-	background-size: cover;
-	/* background-color: #f4f4f4;
+		background-image: url("/img/background_contacts.svg");
+		background-size: cover;
+		/* background-color: #f4f4f4;
 	opacity: 70%; */
-	background-position: center;
-	padding-top: 97px;
-	padding-bottom: 156px;
-}
+		background-position: center;
+		padding-top: 97px;
+		padding-bottom: 156px;
+	}
 
 	.footer-conteiner {
 		padding-top: 0;
@@ -712,5 +711,4 @@ input[type="email"]:hover {
 		color: #fbfbfb;
 		max-width: 332px;
 	}
-
 }
